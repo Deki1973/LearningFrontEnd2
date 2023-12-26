@@ -1,0 +1,278 @@
+/* ------------ VARIABLES ------------ */
+:root{
+    /* COLORS */
+    --color: #9176FF;
+    --dark-color: #2b2b2b;
+    --dark-icon-color: #fff;
+    --light-color: #f7f7f7;
+    --light-icon-color: #FFDE59;
+  }
+
+*{box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+
+
+
+.my-word{
+    width: 100%;
+    height: 50px;
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:x-large;
+}
+
+.my-form{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*background-color: aquamarine;*/
+}
+
+.my-form input{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: x-large;
+    font-weight: 700;
+}
+.my-form button{
+    width: 80px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 0 gray;
+    
+
+
+}
+.content{
+    text-align: center;
+}
+.separator1{
+    width: 100%;
+    height: 2px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.speaker-image{
+    width: 50px;
+    
+    
+    
+}
+
+.word-found{
+    height: 40px;
+
+}
+.pronunciation{
+    height: 40px;
+}
+
+.word-meaning{
+
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5em;
+       
+   
+}
+
+.definitions{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: 27%;
+    text-align: left;
+    margin-top: 0.75rem;
+    
+    
+    
+ 
+}
+.definitions ul li{
+    
+}
+
+.ui-defs{
+    text-align: left;
+}
+
+.search-form{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.search-form button{
+background-image: url('../images/icons8-search-48.png');
+background-repeat: no-repeat;
+background-size: 1.5em;
+background-position: center;
+}
+
+.body-font{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Arial{
+    font-family: Arial;
+ }
+ .Algerian{
+    font-family: Algerian;
+ }
+ .Berlin-sans-fb{
+    font-family: 'Berlin sans fb';
+ }
+ .Times-new-roman{
+    font-family: 'Times New Roman';
+ }
+ .Courier-new{
+   font-family: 'Courier New', Courier, monospace;
+ }
+ .System-UI{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .container1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    
+ }
+ .container11{
+    width: 50%;
+    /*background-color: aqua;*/
+ }
+ .container12{
+    
+    width: 50%;
+    /*background-color: pink;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+ }
+
+
+
+
+ /* dodatak za dugme */
+
+  /* ------------ BASE ------------ */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--light-color);
+    */
+  }
+  
+  /* -------------- BUTTON -------------- */
+  .btn{
+    background-color: #fff;
+    width: 3.75em;
+    height: 2em;
+    border-radius: 5em;
+    padding: 0 0.125em;
+  
+    box-shadow: inset 0 2px 30px rgba(0,0,0, .1),
+                inset 0 4px 4px rgba(0,0,0, .1),
+                inset 0 -2px 2px rgba(0,0,0, .1);
+  
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+  
+    cursor: pointer;
+  }
+  
+  .btn__indicator{
+    background-color: #fff;
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+  
+    position: absolute;
+  
+    box-shadow: 0 4px 20px rgba(0,0,0, .2);
+  
+    transition: transform .3s ease;
+  }
+  
+  .btn__icon-container{
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn__icon{
+    color: var(--light-icon-color);
+    font-size: 1.5rem;
+  }
+  
+  /* -------------- ANIMATION ------------ */
+  .btn__icon.animated{
+    animation: spin 0.125s;
+  }
+  
+  @keyframes spin{
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* -------------- DARKMODE -------------- */
+  body.darkmode{
+    background-color: var(--dark-color);
+    color:white
+  }
+  
+  .darkmode .btn{
+    box-shadow: inset 0 4px 30px rgba(0,0,0, .3),
+                inset 4px 0 4px rgba(0,0,0, .3),
+                inset 0 -2px 2px rgba(0,0,0, .3);
+  }
+  
+  .darkmode .btn__indicator{
+    transform: translateX(1.75em);
+    background-color: var(--dark-color);
+    box-shadow: 0 8px 40px rgba(0,0,0, .3);
+  }
+  
+  .darkmode .btn__icon{
+    color: var(--dark-icon-color);
+  }
+
+  /*-------------------------------------------*/
+  .select-theme{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px; 
+  }

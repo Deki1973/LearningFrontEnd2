@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!--
+    U radu sam koristio materijal sa
+    
+        https://www.tutorialspoint.com/how-to-change-font-style-using-drop-down-list-in-javascript
+        https://github.com/devmode-on/Animated-Dark-Mode-Button/blob/main/js/main.js<
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="container11">
+           
+        </div>
+        <div class="container12">
+            <div class="fonts">
+                <label>Select font: </label>
+                <select id="input-font" class="input" onchange="changingFont (this);">
+                    <option value="Times-new-roman" selected="selected">Times New Roman</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Algerian">Algerian</option>
+                    <option value="Berlin-sans-fb">Berlin Sans FB</option>
+                    <option value="bold" class="bolder">Tebal</option>
+                    <option value="Courier-new">Courier New</option>
+                    <option value="System-UI">System UI</option>
+                </select>
+            </div>
+
+            <div class="select-theme">
+                <div><label for="">Theme Dark/Light: </label></div>
+                <div class="btn">
+
+                    <div class="btn__indicator">
+                        <div class="btn__icon-container">
+                            <i class="btn__icon fa-solid"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="my-form">
+        <form class="search-form">
+            <input type="text" class="word-input" id="word-input" />
+            <button type="submit"></button>
+        </form>
+    </div>
+    <section class="content"></section>
+
+</body>
+
+</html>
