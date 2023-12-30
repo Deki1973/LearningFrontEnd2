@@ -1,4 +1,5 @@
 // U radu sam se oslanjao na materijal sa: https://forum.freecodecamp.org/t/using-fetch-to-get-google-books-api/323889/20
+// Pozadinska slika je sa Image by <a href="https://pixabay.com/users/jarmoluk-143740/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=436498">Michal Jarmoluk</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=436498">Pixabay</a>
 
 const formSearch = document.querySelector("#form-search");
 const inpTitle = document.querySelector(".input-title");
